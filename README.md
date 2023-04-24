@@ -1,4 +1,4 @@
-# Pnpm Typescript Template
+# monorepo-template
 
 monorepo project template with pnpm 、 eslint 、 prettier 、jest
 
