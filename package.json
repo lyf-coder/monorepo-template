@@ -1,0 +1,44 @@
+{
+    "name": "monorepo-template",
+    "scripts": {
+        "filter-cmd": " pnpm  --filter 包名 cmd",
+        "build": "pnpm -r build",
+        "clean-build": "pnpm -r clean-build",
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+        "format": "prettier --write .",
+        "prettier:fix": "prettier --write '{**/*,*}.{js,ts,jsx,tsx}'",
+        "test": "jest",
+        "test-hello": "jest --testPathPattern=/packages/hello/",
+        "doc": "typedoc"
+    },
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lyf-coder/monorepo-template.git"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.26.1",
+        "nodemon": "^2.0.22",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.4",
+        "eslint": "^8.39.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-config-airbnb-typescript": "^17.0.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.8.7",
+        "@types/jest": "^29.5.1",
+        "jest": "^29.5.0",
+        "ts-jest": "^29.1.0",
+        "typedoc": "^0.24.4",
+        "typedoc-plugin-markdown": "^3.15.2"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "author": "lyf-coder",
+    "license": "SEE LICENSE IN LICENSE file"
+}

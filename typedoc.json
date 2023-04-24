@@ -1,0 +1,11 @@
+{
+    "cleanOutputDir": true,
+    "plugin": ["typedoc-plugin-markdown"],
+    "entryPoints": ["packages/*"],
+    "name": "monorepo-template",
+    "entryPointStrategy": "packages",
+    "includeVersion": true,
+    "sort": [
+        "source-order"
+      ]
+  }

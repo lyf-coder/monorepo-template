@@ -1,0 +1,14 @@
+{
+    // used by eslint
+    "include": ["packages/*/src/**/*", "packages/*/test/**/*"],
+    "files": [],
+    "compilerOptions": {
+        "esModuleInterop": true,
+    },
+    "references": [
+        // config sub packages
+      {
+        "path": "./packages/hello"
+      },
+    ]
+  }
