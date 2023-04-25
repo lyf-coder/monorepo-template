@@ -1,6 +1,6 @@
 {
     // used by eslint
-    "include": ["packages/*/src/**/*", "packages/*/test/**/*"],
+    "include": ["packages/*/test/**/*"],
     "files": [],
     "compilerOptions": {
         "esModuleInterop": true,
